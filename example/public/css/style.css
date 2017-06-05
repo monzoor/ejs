@@ -1,0 +1,84 @@
+/* *******************
+*		Start of OBJ1		 *
+**********************/
+.object1 {
+	padding-top: 50px;
+	background-color: #96CEB4;
+	height: 80vh;
+	color: white;
+	position: relative;
+	z-index: 9999;
+}
+/* *******************
+*		Start of OBJ2		 *
+**********************/
+.object2 {
+	position: relative;;
+	padding-top: 50px;
+	background-color: #FFEEAD;
+}
+.object2 .col-md-12{
+	background-color: #FF6F69;
+}
+.options {
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+  
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: middle;
+  line-height: 30px;
+  height: 80vh;
+  left: -33.333333%;
+  top: 0;
+  position: absolute;
+  background-color: #88D8B0;
+  z-index: 999;
+}
+.options select {
+	width: 100%;
+}
+.options.in {
+  left: 0;
+}
+
+
+/* *******************
+*		Common Items      *
+**********************/
+.alert {
+	margin-top: 10px;
+}
+.number-field.error {
+	border: 1px solid red;
+}
+.input-validation {
+	display: none;
+}
+.show {
+	display: block;
+}
+ul {
+	padding: 0;
+}
+li {
+	list-style: none;
+	padding: 15px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.circle {
+  -webkit-border-radius: 50%; 
+  -moz-border-radius: 50%; 
+  border-radius: 50%; 
+
+  width: 30px;
+  height: 30px;
+  border: 1px solid;
+  display: inline-block;
+  float: left;
+}
+

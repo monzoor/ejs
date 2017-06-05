@@ -1,0 +1,33 @@
+	<ul>
+		<% if (error) { %> 
+			<div class="alert alert-danger" role="alert">
+			  <strong>Oh snap!</strong> No DATA.
+			</div>
+		<% } %>
+	</ul>
+	<% for(var i=prevCounter; i<currentCounter; i++) {%>
+		<li class="col-md-12">
+			<div class="circle"><%= i+1%></div>
+			<span>Item <%= type %><%= i+1%></span>
+		</li>
+	<% } %>
+	<nav aria-label="Page navigation example">
+	  <ul class="pagination">
+	  	<% if (pages.prev) { %>
+		    <li class="page-item">
+		      <a class="page-link" id="prev" href="<%= pages.prev %>" aria-label="Previous">
+		        <span aria-hidden="true">Previous</span>
+		        <span class="sr-only">Previous</span>
+		      </a>
+		    </li>
+	    <% } %> 
+	    <% if (pages.next) { %>
+		    <li class="page-item">
+		      <a class="page-link" id="next" href="<%= pages.next %>" aria-label="Next">
+		        <span aria-hidden="true">Next</span>
+		        <span class="sr-only">Next</span>
+		      </a>
+		    </li>
+	    <% } %> 
+	  </ul>
+	</nav>
